@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaTech Counsel</title>
+    <link rel="shortcut icon" href="alpha-favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="combined.css">
+</head>
+<body>
+    <header class="header-block">
+        <img src="alphatech-logo.jpg" alt="ATC Logo" class="header-logo">
+        
+        <!-- Desktop Navigation -->
+        <div class="header-content desktop-nav">
+            <button class="nav-btn" onclick="window.open('https://alphatechcounsel.com/', '_blank')">Home</button>
+            <button class="nav-btn" onclick="scrollToSection('about')">About</button>
+            <button class="nav-btn" onclick="scrollToSection('intro')">Intro</button>
+            <button class="nav-btn" onclick="scrollToSection('services')">Services</button>
+            <button class="nav-btn" onclick="scrollToSection('contact')">Contact Us</button>
+        </div>
+        
+        <!-- Mobile Hamburger Menu -->
+        <div class="mobile-menu-container">
+            <button class="hamburger-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <button class="nav-btn mobile-nav-btn" onclick="window.open('https://alphatechcounsel.com/', '_blank'); closeMobileMenu()">Home</button>
+                <button class="nav-btn mobile-nav-btn" onclick="scrollToSection('about'); closeMobileMenu()">About</button>
+                <button class="nav-btn mobile-nav-btn" onclick="scrollToSection('intro'); closeMobileMenu()">Intro</button>
+                <button class="nav-btn mobile-nav-btn" onclick="scrollToSection('services'); closeMobileMenu()">Services</button>
+                <button class="nav-btn mobile-nav-btn" onclick="scrollToSection('contact'); closeMobileMenu()">Contact Us</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT Section with Typewriter Effect -->
+    <section id="about" class="section landing-section">
+        <main class="landing-content">
+            <p class="landing-text" id="typewriter-text"></p>
+            <span class="glyphicon glyphicon-menu-down" role="button" aria-label="Scroll down to next section" onclick="scrollToNextSection();"></span>
+        </main>
+    </section>
+
+    <!-- INTRO Section (formerly About content) -->
+    <section id="intro" class="section home-section">
+        <main class="main-content">
+            <p>You’ve put in the work, put together the initial team, validated your product offering, and now the stakes are rising—fast. Customers are demanding more, investors are circling, and your team that is stretched thin is looking to you to lead through what’s next.  You are feeling the pressure and excitement of being on the verge of something big and you are ready to scale. Companies like yours are who our firm was built to serve (read our archetype client story about Jordan).</p>
+            <p>We help selected emerging technology companies scale.  We bring focus, experience, and service to the table to tackle anxiety-provoking obstacles and get things done.  To do this, we use a relationship-driven legal counsel model  that we have found yields better outcomes.  Communicating and working together regularly with clients helps us to understand client priorities, customer and investor expectations, and the often-overlooked social and personality dynamics at play in business and deal-making.</p>
+            <p>We're selective about who we work with and we are not for everybody—because we believe the right fit drives better results.  We turn away more engagements than we accept and our clients aren't looking for the lowest cost alternative. They come to us to think strategically, move fast, and get it right the first time.</p>
+            
+            <div class="cta-container">
+                <a href="https://outlook.office.com/bookwithme/user/1e9ef88637804628810e3d4ca84b3570%40alphatechcounsel.com?anonymous&ismsaljsauthenabled" target="_blank" class="cta-btn">Find out if we're the right fit</a>
+                <p class="cta-byline">We work with only a select group of scaling companies and our model is not right for everyone</p>
+            </div>
+        </main>
+    </section>
+
+    <!-- SERVICES Section -->
+    <section id="services" class="section services-section">
+        <main class="main-content">
+            <h3>TAILORED LEGAL SOLUTIONS</h3>
+            <h1>Innovative Support for Tech Businesses</h1>
+            <section class="offerings-grid" aria-label="Our Offerings">
+              <div class="offering-card fixed-fee-card">
+                <img class="offering-image" src="Fixed_fee.png" alt="Fixed-Fee Projects">
+                <div class="offering-content">
+                  <h2>Fixed-Fee Projects</h2>
+                  <p>
+                    Fixed fee legal solutions for emerging technology companies, allowing you to focus on growth while we handle one-time legal projects seamlessly:
+                  <a href="#" class="bubble-link" data-bubble="Start on solid ground—set up your company with legal and equity structure support for your business.<ul><li>Guidance on choosing an entity type that fits your goals</li><li>Assistance with founders' equity allocation and setup</li><li>Preparation and filing of required state incorporation documents</li></ul>">incorporation</a>,
+                  <a href="#" class="bubble-link" data-bubble="Equip your team for growth with practical equity plan solutions.<ul><li>Guidance on setting up stock option plans and board consents</li><li>Templates for grant agreements tailored to your company stage</li><li>Support in understanding option pool structuring for employees and advisors</li></ul>">equity plans</a>,
+                  <a href="#" class="bubble-link" data-bubble="Build your workforce with employment agreements aligned to your needs and compliance requirements.<ul><li>Preparation of employment and contractor agreements for your stage and location</li><li>Resources for multi-state practices and compliance considerations</li><li>Templates for founders, employees, and key hires</li></ul>">employee agreements</a>, and 
+                  <a href="#" class="bubble-link" data-bubble="Navigate early financing with clarity using industry-standard documents and counsel.<ul><li>Preparation of standard SAFE or Convertible Note agreements</li><li>Assistance with documentation and relevant filings</li><li>Support and insight on market terms and key considerations</li></ul>">convertible debt/SAFE financings</a> -- scoped and predictable.
+                  </p>
+                </div>
+              </div>
+      
+              <div class="offering-card subscription-card">
+                <img class="offering-image" src="Subscription_Counsel.png" alt="Subscription Counsel">
+                <div class="offering-content">
+                  <h2>AlphaTech Subscription Counsel</h2>
+                  <p>
+                    Need some stock option agreements prepared or input on the number of shares for a grant to a c-level hire?  Input on a proposed term sheet or a vendor proposal?  A company sale waterfall prepared?  How about documents for a customer referral program or a board of advisors?  Need input on a business model change?  Or, perhaps a sounding board for how to position a deal with an investor or strategic partner? These are the kinds of questions and requests we get every week. Consider the AlphaTech Subscription Counsel your legal partner on speed dial.  Regular strategy calls, Q&A support, identified routine matters, and the occasional project—all for one flat quarterly rate (not runaway hourly time).  We tailor our subscription offerings for our selected clients that meet certain criteria. We sometimes even build out technology for certain clients under the subscription.  With the AlphaTech Subscription Counsel, legal issues are surfaced and resolved early, and institutional knowledge is developed over time as part of our relationship model to better position our clients for their signature deals.
+                  </p>
+                  
+                  <div class="subscription-cta-container">
+                    <a href="https://outlook.office.com/bookwithme/user/1e9ef88637804628810e3d4ca84b3570%40alphatechcounsel.com?anonymous&ismsaljsauthenabled" target="_blank" class="subscription-cta-btn">Find out more about AlphaTech Subscription Counsel</a>
+                    <p class="subscription-byline">See how a predictable subscription model not only replaces hourly bills for work covered but also builds the legal foundation for scaling and a successful exit</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="offering-card signature-deals-card">
+                <img class="offering-image" src="Signature_deal.png" alt="Signature Deals">
+                <div class="offering-content">
+                  <h2>Signature Deals</h2>
+                  <p>When you're navigating a major transaction—a priced financing round, acquisition, strategic partnership, joint development, or company sale—we bring experience, judgment, and deal leadership to the table to help get deals done. We understand that the important deals often require extra effort and late nights, as the lapse of time frequently kills deals. When coupled with the AlphaTech Subscription Counsel, we know our clients’ priorities, preferences, and goals better to more efficiently and effectively get important signature deals inked.  </p>
+                  
+                  <div class="signature-cta-container">
+                    <a href="https://outlook.office.com/bookwithme/user/1e9ef88637804628810e3d4ca84b3570%40alphatechcounsel.com?anonymous&ismsaljsauthenabled" target="_blank" class="signature-cta-btn">Talk through your next Signature Deal</a>
+                    <p class="signature-byline">No sales pitch—just a strategy call to give you high level feedback</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="offering-card hourly-support-card">
+                <img class="offering-image" src="Hourly_support.png" alt="Custom Hourly Support">
+                <div class="offering-content">
+                  <h2>Focused, Experienced Legal Team For Companies Ready to Scale</h2>
+                  <p>If you’re leading a fast-moving company through fundraising, a strategic partnership, or preparing for exit, you’re not alone. We’ve supported founders and CEOs of emerging technology companies through hundreds of strategic deals, financings, acquisitions, company sales, and growth milestones.  We help relieve the stress and anxiety when navigating strategic deals.  What sets us apart is the combination of our focus, experience, and service that yields strategic judgment and execution discipline—a legal team that not only helps navigate complex decisions but also handles the practical legal work that has to get done. From cap tables to contracts to closings, we’re built for speed, precision, and long-term trust, so you can scale without second-guessing.</p>
+                </div>
+              </div>
+            </section>
+            <div class="three-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </main>
+    </section>
+
+    <!-- CONTACT Section -->
+    <section id="contact" class="section contact-section">
+        <main class="contact-main">
+            <p class="contact-typewriter-text" id="contact-typewriter-text"></p>
+            <div class="contact-cta-container">
+                <a href="https://outlook.office.com/bookwithme/user/1e9ef88637804628810e3d4ca84b3570%40alphatechcounsel.com?anonymous&ismsaljsauthenabled" target="_blank" class="contact-cta-btn">If this is of interest, let's talk</a>
+                <p class="contact-cta-byline">No pressure—just a conversation to see if our approach matches what you're looking for</p>
+            </div>
+        </main>
+    </section>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Scroll to next section function (like their website)
+        // Scroll to next section function (like their website)
+        function scrollToNextSection() {
+            const currentSection = document.querySelector('section');
+            const nextSection = currentSection.nextElementSibling;
+            
+            if (nextSection && nextSection.tagName.toLowerCase() === 'section') {
+                nextSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+
+        // Services bubble functionality
+        (() => {
+            const ACTIVE_CLASS = 'thought-bubble-active';
+            let openBubble = null;
+            let openTarget = null;
+  
+            function closeBubble() {
+              if (openBubble) {
+                openBubble.remove();
+                openBubble = null;
+                if (openTarget) {
+                  openTarget.classList.remove(ACTIVE_CLASS);
+                  openTarget = null;
+                }
+                document.removeEventListener('keydown', onKeyDown);
+                window.removeEventListener('scroll', closeBubble, true);
+                window.removeEventListener('resize', closeBubble, true);
+              }
+            }
+  
+            function onKeyDown(e) {
+              if (e.key === 'Escape') closeBubble();
+            }
+  
+            function positionBubble(bubble, target) {
+              const bubbleRect = bubble.getBoundingClientRect();
+              const viewportW = document.documentElement.clientWidth;
+              const viewportH = document.documentElement.clientHeight;
+
+              // Find the closest offering-card ancestor
+              const card = target.closest('.offering-card');
+              const cardRect = card ? card.getBoundingClientRect() : {top: 0, left: 0, right: 0, height: 0, width: 0};
+
+              // Vertically center with the card, horizontally to the right of the card
+              let top = window.scrollY + cardRect.top + (cardRect.height - bubbleRect.height) / 2 - 100;
+              let left = window.scrollX + cardRect.right + 48; // 48px gap to the right of the card
+
+              // Prevent overflow on the right
+              if (left + bubbleRect.width > window.scrollX + viewportW - 8) {
+                left = window.scrollX + viewportW - bubbleRect.width - 8;
+              }
+              // Prevent overflow on the left
+              if (left < window.scrollX + 8) {
+                left = window.scrollX + 8;
+              }
+              // Prevent overflow on the top/bottom
+              if (top < window.scrollY + 8) {
+                top = window.scrollY + 8;
+              } else if (top + bubbleRect.height > window.scrollY + viewportH - 8) {
+                top = window.scrollY + viewportH - bubbleRect.height - 8;
+              }
+
+              bubble.style.top = `${top}px`;
+              bubble.style.left = `${left}px`;
+              bubble.setAttribute('data-placement', 'right');
+            }
+  
+            document.addEventListener('click', (e) => {
+              const link = e.target.closest('.bubble-link[data-bubble]');
+              if (link) {
+                e.preventDefault();
+                if (openTarget === link) {
+                  closeBubble();
+                  return;
+                }
+                closeBubble();
+
+                const bubble = document.createElement('div');
+                bubble.className = 'thought-bubble';
+
+                // Add the text content only
+                const text = document.createElement('span');
+                text.innerHTML = (link.dataset.bubble || '').replace(/\\n/g, '<br>');
+                bubble.appendChild(text);
+
+                document.body.appendChild(bubble);
+                requestAnimationFrame(() => positionBubble(bubble, link));
+
+                openBubble = bubble;
+                openTarget = link;
+                link.classList.add(ACTIVE_CLASS);
+
+                document.addEventListener('keydown', onKeyDown);
+                window.addEventListener('scroll', closeBubble, true);
+                window.addEventListener('resize', closeBubble, true);
+                const onDocClick = (ev) => {
+                  if (!bubble.contains(ev.target) && ev.target !== link) {
+                    document.removeEventListener('click', onDocClick, true);
+                    closeBubble();
+                  }
+                };
+                document.addEventListener('click', onDocClick, true);
+              }
+            });
+        })();
+
+        // Navigation highlighting based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = ['about', 'intro', 'services', 'contact'];
+            const navButtons = document.querySelectorAll('.nav-btn');
+            
+            let currentSection = '';
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom > 100) {
+                    currentSection = sectionId;
+                }
+            });
+
+            navButtons.forEach(btn => {
+                btn.classList.remove('active');
+                const btnText = btn.textContent.toLowerCase().replace(' us', '');
+                if (btnText === currentSection || (btnText === 'contact' && currentSection === 'contact')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Trigger contact typewriter when contact section is in view
+            const contactSection = document.getElementById('contact');
+            const contactRect = contactSection.getBoundingClientRect();
+            const contactTypewriterElement = document.getElementById('contact-typewriter-text');
+            
+            if (contactRect.top <= window.innerHeight * 0.5 && contactRect.bottom > 0 && !contactTypewriterElement.dataset.typed) {
+                contactTypewriterElement.dataset.typed = 'true';
+                setTimeout(() => {
+                    typeWriter('You want to scale?\nWe get shit done.', 'contact-typewriter-text', 80);
+                }, 300);
+            }
+        });
+
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger-btn');
+            
+            if (mobileMenu.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                mobileMenu.classList.add('active');
+                hamburger.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger-btn');
+            
+            mobileMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburger = document.querySelector('.hamburger-btn');
+            
+            if (mobileMenu.classList.contains('active') && 
+                !mobileMenu.contains(e.target) && 
+                !hamburger.contains(e.target)) {
+                closeMobileMenu();
+            }
+        });
+
+        // Close mobile menu when resizing to desktop view
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 992) {
+                closeMobileMenu();
+            }
+        });
+
+        // Typewriter effect for landing text
+        function typeWriter(text, elementId, speed = 100) {
+            const element = document.getElementById(elementId);
+            let i = 0;
+            
+            function typeChar() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeChar, speed);
+                }
+            }
+            
+            // Clear the element first
+            element.innerHTML = '';
+            typeChar();
+        }
+
+        // Start typewriter effect when page loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                typeWriter('Scaling Smart by Staying Connected', 'typewriter-text', 80);
+            }, 500); // Small delay before starting
+        });
+    </script>
+</body>
+</html>
